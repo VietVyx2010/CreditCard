@@ -1,0 +1,202 @@
+/*MÀN HÌNH TABLET NGANG*/
+@media screen and (max-width: 1024px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .logo img {
+    display: none;
+  }
+  nav ul {
+    gap: 60px;
+  }
+  main {
+    padding: 30px 0 30px 50px;
+  }
+  .left {
+    max-width: 50%;
+    text-align: left;
+  }
+  .left .left__title h2 {
+    color: var(--purple);
+    font-size: 2.5rem;
+  }
+  .wrap-btn {
+    gap: 10px;
+  }
+
+  button {
+    padding: 15px 18px;
+  }
+
+  .right {
+    top: 100px;
+  }
+  .right .right__bluecard img {
+    top: 45px;
+    left: -35px;
+  }
+  #toggleBtn {
+    top: 580px;
+  }
+}
+/*Tablet đứng*/
+@media screen and (max-width: 964px) {
+  .checkbtn {
+    display: block;
+    z-index: 800;
+  }
+  header {
+    padding: 42px 40px 0 40px;
+}
+  .mobile-logo{
+    display: block;
+  }
+  ul {
+    padding-top: 100px;
+    flex-direction: column;
+    position: absolute;
+    z-index: 700;
+    width: 100%;
+    height: 150%;
+    background: #3d434b;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    transition: all 0.7s;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  button {
+    padding: 13px 15px;
+  }
+  .right {
+    top: 70px;
+  }
+  #toggleBtn {
+    top: 640px;
+  }
+}
+
+/* Ngang smartphone vừa */
+@media screen and (max-width: 640px) {
+  body {
+    overflow: auto;
+  }
+
+  main {
+    padding: 0 50px 0 60px;
+    justify-content: center;
+  }
+  .left {
+    min-width: 75%;
+    letter-spacing: 1px;
+  }
+  button {
+    padding: 10px 15px;
+  }
+  .social {
+    flex-direction: row;
+    padding: 0 0 30px 40px;
+  }
+  .social i img.twitter {
+    width: 33px;
+    padding: 3px;
+  }
+
+  .right .right__blackcard img {
+    width: 180px;
+  }
+  .right .right__bluecard img {
+    width: 180px;
+    top: 15px;
+    left: -20px;
+  }
+
+  #toggleBtn {
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: var(--bg-toggle-btn);
+    box-shadow: 0 5px 10px var(--box-shadow);
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+  }
+  #toggleBtn::before {
+    left: 0.2px;
+    bottom: 0.3px;
+    width: 25px;
+    height: 25px;
+  }
+  #toggleBtn.active::before {
+    transform: translateX(24px);
+  }
+}
+
+/* Ngang smartphone nhỏ */
+@media screen and (max-width: 540px) {
+  main {
+    flex-direction: column-reverse;
+    gap: 100px;
+    padding: 0 0 30px 30px;
+  }
+  .safe {
+    display: none;
+  }
+  .left {
+    min-width: 100%;
+    letter-spacing: 1px;
+  }
+  .right {
+    padding-left: 30px;
+  }
+  .right .right__blackcard img {
+    width: 380px;
+  }
+  .right .right__bluecard img {
+    width: 400px;
+    top: 40px;
+    left: -25px;
+  }
+  .left {
+    /* text-align: justify; */
+    min-width: 100%;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+  #toggleBtn {
+    position: fixed;
+    top: 42px;
+    right: 30px;
+  }
+}
+
+/* Dọc smartphone nhỏ */
+@media screen and (max-width: 420px) {
+  ul {
+    height: 170%
+  }
+  .left {
+    /* text-align: justify; */
+    min-width: 95%;
+    text-align: left;
+    letter-spacing: 0;
+  }
+  .right {
+    padding-left: 0;
+  }
+  .right .right__blackcard img {
+    width: 300px;
+  }
+  .right .right__bluecard img {
+    width: 300px;
+  }
+}
