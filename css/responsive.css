@@ -1,10 +1,6 @@
 /*MÀN HÌNH TABLET NGANG*/
 @media screen and (max-width: 1024px) {
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+
   .logo img {
     display: none;
   }
