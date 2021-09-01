@@ -10,7 +10,9 @@ window.onload = function () {
         document.querySelector("body").style.backgroundImage = "url('./img/BACKGROUND-DARK.png')"
         root.setAttribute('data-theme', 'dark');
       } else {
-        document.querySelector("body").style.backgroundImage = "url('./img/BACKGROUND.png')"
+        document.querySelector("body").style.backgroundImage = "url('./img/BACKGROUND.png')";
+        document.querySelector("body").style.backgroundSize = "cover";
+        document.querySelector("body").style.backgroundRepeat = "no-repeat";
         root.setAttribute('data-theme', 'light');
       }
       // thay đổi vị trí của button
